@@ -3,8 +3,8 @@
 ## Базовые команды для терминала:
 
 
-$ pwd - инфо о текущей директории<br>     
-$ ls -  инфо содержимого директории<br>    
+$ pwd - инфо о текущей директории<br>    
+$ ls -  инфо содержимого директории<br>
 $ ls -a - инфо расширенного списка файлов и папок + скрытые . .. .git<br> 
 $ ls ~ - инфо домашней директории<br> 
 $ ls .. - инфо директории выше<br>
@@ -26,11 +26,11 @@ $ rm -r имя_папки - удаление полной директории<b
 
 
 ## Установка *Git*. 
-Windows - Скачать с офф-сайта + пакет bash. 
-Linux - Скачать с офф-сайта. 
-Mac OS - 1. В терминале $ usr/bin/git -> install. 
-       - 2. Через менеджер пакетов Homebrew. 
-В терминале /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" --> $ brew install git. 
+Windows - Скачать с офф-сайта + пакет bash<br>
+Linux - Скачать с офф-сайта<br> 
+Mac OS - 1. В терминале $ usr/bin/git -> install<br> 
+       - 2. Через менеджер пакетов Homebrew<br> 
+В терминале /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" --> $ brew install git<br> 
 ### $ git version - проверка установки. 
 ---
 
