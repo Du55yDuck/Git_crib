@@ -143,11 +143,11 @@ $ git log --oneline - сокращенный Log(сокращенный хэш �
 
 
 
-'''mermaid
-flowchart TD
-    A[Untracked] -- "git add" --> B[staged/tracked];
-    B[Staged] -- "git commit -m ''" --> C[tracked/committed];
-    C[Committed] -- " git push" --> D[GitHub];
+'''mermaid. 
+  graph TD;    
+    A[Untracked] -- "git add" --> B[staged/tracked];  
+    B[Staged] -- "git commit -m ''" --> C[tracked/committed];  
+    C[Committed] -- " git push" --> D[GitHub];  
 '''
 
 
@@ -165,7 +165,7 @@ $ git log --oneline - max 72 символа в сообщении.
 
 - Корпоративный(jira --> LGS - 239, где LGS - название проекта, 239 - номер задачи). 
 - [Conventional commits](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация).  
-(<type> : <сообщение>, где <type> - feat(новая фича) или fix(испр баг)). 
+(type : <сообщение>, где type - feat(новая фича) или fix(испр баг)). 
 - GitHub стиль - указать номер задачи в тексте --> " ... # 334 ...", Github свяжет коммит и задачу. 
 
 Рекомендации: Если на русском, используй инфинитивы(добавить, исправить...). 
