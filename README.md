@@ -29,7 +29,7 @@ $ rm -r имя_папки - удаление полной директории<b
 Windows - Скачать с офф-сайта + пакет bash<br>
 Linux - Скачать с офф-сайта<br> 
 Mac OS - 1. В терминале $ usr/bin/git -> install<br> 
-       - 2. Через менеджер пакетов Homebrew<br> 
+2. Через менеджер пакетов Homebrew<br> 
 В терминале /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" --> $ brew install git<br> 
 ### $ git version - проверка установки. 
 ---
@@ -142,12 +142,14 @@ $ git log --oneline - сокращенный Log(сокращенный хэш �
 ### Схема изменения статусов файлов. 
 
 
+
 '''mermaid
-graph LR;
-    Untracked -- "git add" --> staged/tracked;
-    Staged -- "git commit -m ''" --> tracked/committed;
-    Committed -- " git push" --> GitHub;
+flowchart TD
+    A[Untracked] -- "git add" --> B[staged/tracked];
+    B[Staged] -- "git commit -m ''" --> C[tracked/committed];
+    C[Committed] -- " git push" --> D[GitHub];
 '''
+
 
 ---
 
@@ -162,7 +164,8 @@ $ git log --oneline - max 72 символа в сообщении.
 Стили оформления. 
 
 - Корпоративный(jira --> LGS - 239, где LGS - название проекта, 239 - номер задачи). 
-- [Conventional commits](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация)(<type> : <сообщение>, где <type> - feat(новая фича) или fix(испр баг)). 
+- [Conventional commits](https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#спецификация).  
+(<type> : <сообщение>, где <type> - feat(новая фича) или fix(испр баг)). 
 - GitHub стиль - указать номер задачи в тексте --> " ... # 334 ...", Github свяжет коммит и задачу. 
 
 Рекомендации: Если на русском, используй инфинитивы(добавить, исправить...). 
