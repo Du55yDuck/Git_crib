@@ -142,14 +142,14 @@ $ git log --oneline - сокращенный Log(сокращенный хэш �
 ### Схема изменения статусов файлов. 
 
 
-<br>
+
 '''mermaid
 graph LR;    
-    Untracked -- "git add" --> staged/tracked;  
-    Staged -- "git commit -m ''" --> tracked/committed;  
-    Committed -- " git push" --> GitHub;  
+    CL(Untracked) -- CL("git add") --> CL(staged/tracked);  
+    CL(Staged) -- CL("git commit -m ''") --> CL(tracked/committed);  
+    CL(Committed) -- CL(" git push") --> CL(GitHub);  
 '''
-<br>
+
 
 ---
 
