@@ -143,12 +143,12 @@ $ git log --oneline - сокращенный Log(сокращенный хэш �
 
 
 
-'''mermaid
+```mermaid
 flowchart LR    
     A[Untracked] -- git add --> B[staged/tracked];  
     C[Staged] -- git commit -m --> D[tracked/committed];  
     E(Committed) -- git push --> G[GitHub];  
-'''
+```
 
 
 ---
